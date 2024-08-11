@@ -110,52 +110,276 @@ body {
 }
 
 .top-article {
+  width: 78%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -92vh;
+}
+.top-article .top-article-header {
   display: flex;
   justify-content: space-between;
+  align-items: left;
+  width: 100%;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-weight: bold;
+  color: #343C6A;
 }
-.top-article h2 {
+.top-article .top-article-header .my-cards {
+  margin-left: 1vh;
   font-size: 22px;
-  color: #343C6A;
 }
-.top-article h3 {
+.top-article .top-article-header .see-all {
+  position: absolute;
+  margin-left: 55vh;
   font-size: 17px;
-  color: #343C6A;
+  margin-top: 2vh;
 }
-.top-article .recent-transaction-white {
-  width: 350px;
-  height: 235px;
-  background-color: white;
-  border-radius: 25%;
-  border-color: solid 1px #F5F7FA;
+.top-article .top-article-header .recent {
+  position: absolute;
+  margin-left: 110vh;
+  font-size: 22px;
 }
-.top-article .cards {
+
+.cards-section {
   display: flex;
   justify-content: space-between;
+  margin-top: 0px;
 }
-.top-article .cards .blue-credit-card,
-.top-article .cards .white-credit-card {
-  width: 350px;
-  height: 235px;
-  border-radius: 25%;
+.cards-section .blue-credit-card,
+.cards-section .white-credit-card {
+  width: 300px;
+  height: 225px;
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  gap: 10px;
 }
-.top-article .cards .blue-credit-card .credit-card-icon-white,
-.top-article .cards .blue-credit-card .credit-card-icon-black,
-.top-article .cards .white-credit-card .credit-card-icon-white,
-.top-article .cards .white-credit-card .credit-card-icon-black {
+.cards-section .blue-credit-card h5, .cards-section .blue-credit-card h4,
+.cards-section .white-credit-card h5,
+.cards-section .white-credit-card h4 {
+  margin: 0;
+  padding: 0;
+}
+.cards-section .blue-credit-card h4,
+.cards-section .white-credit-card h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.cards-section .blue-credit-card h5,
+.cards-section .white-credit-card h5 {
+  font-size: 12px;
+  font-weight: 500;
+}
+.cards-section .blue-credit-card .credit-card-icon-white,
+.cards-section .blue-credit-card .credit-card-icon-black,
+.cards-section .white-credit-card .credit-card-icon-white,
+.cards-section .white-credit-card .credit-card-icon-black {
   width: 34.77px;
   height: 34.77px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
-.top-article .cards .blue-credit-card .circles-white,
-.top-article .cards .blue-credit-card .circles-black,
-.top-article .cards .white-credit-card .circles-white,
-.top-article .cards .white-credit-card .circles-black {
+.cards-section .blue-credit-card .circles-white,
+.cards-section .blue-credit-card .circles-black,
+.cards-section .white-credit-card .circles-white,
+.cards-section .white-credit-card .circles-black {
   width: 44px;
   height: 30px;
+  position: absolute;
+  bottom: 13px;
+  left: 270px;
 }
-.top-article .cards .blue-credit-card {
-  background-color: #4C49ED;
+.cards-section .blue-credit-card {
+  background: linear-gradient(160deg, #4C49ED, #2b2bb8);
+  color: white;
 }
-.top-article .cards .white-credit-card {
+.cards-section .blue-credit-card .card-number {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.cards-section .white-credit-card {
   background-color: white;
-  border-color: solid 1px #F5F7FA;
+  border: 1px solid #F5F7FA;
+  color: #4C49ED;
+}
+.cards-section .white-credit-card .card-number {
+  color: #4C49ED;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.recent-transaction {
+  width: 300px;
+  height: 225px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  border: 1px solid #F5F7FA;
+  padding: 1rem;
+}
+.recent-transaction .deposit-card,
+.recent-transaction .deposit-paypal,
+.recent-transaction .jemi-wilson {
+  display: flex;
+}
+.recent-transaction .deposit-card img,
+.recent-transaction .deposit-paypal img,
+.recent-transaction .jemi-wilson img {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  padding-bottom: 40px;
+  margin-top: 10px;
+}
+.recent-transaction .deposit-card .text-container,
+.recent-transaction .deposit-paypal .text-container,
+.recent-transaction .jemi-wilson .text-container {
+  display: flex;
+  flex-direction: column;
+}
+.recent-transaction .deposit-card .text-container h5,
+.recent-transaction .deposit-paypal .text-container h5,
+.recent-transaction .jemi-wilson .text-container h5 {
+  font-size: 15px;
+  color: #718EBF;
+  font-weight: 400;
+  margin-top: -14px;
+}
+.recent-transaction .deposit-card .text-container h4,
+.recent-transaction .deposit-paypal .text-container h4,
+.recent-transaction .jemi-wilson .text-container h4 {
+  font-size: 16px;
+  color: #232323;
+  margin-top: 0px;
+}
+.recent-transaction .deposit-card .text-container .red-text,
+.recent-transaction .deposit-paypal .text-container .red-text,
+.recent-transaction .jemi-wilson .text-container .red-text {
+  color: red;
+  font-weight: 400;
+  margin-top: -50px;
+  margin-left: 190px;
+}
+.recent-transaction .deposit-card .text-container .green-text,
+.recent-transaction .deposit-paypal .text-container .green-text,
+.recent-transaction .jemi-wilson .text-container .green-text {
+  color: green;
+  font-weight: 400;
+  margin-top: -60px;
+  margin-left: 190px;
+}
+
+.middle-article {
+  width: 78%;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -250vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  width: 100%;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  font-weight: bold;
+  color: #343C6A;
+}
+.middle-article .weekly-activity {
+  position: absolute;
+  margin-left: -30vh;
+  font-size: 22px;
+}
+.middle-article .expense-statistics {
+  position: absolute;
+  margin-left: 78vh;
+  font-size: 22px;
+}
+
+.weekly-activity-graph {
+  width: 700px;
+  height: 320px;
+  border-radius: 25px;
+  background-color: white;
+  margin-top: 4vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.weekly-activity-graph .graph {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: calc(100% - 60px);
+  height: calc(100% - 30px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.weekly-activity-graph .graph .line {
+  position: absolute;
+  width: 5px;
+  border-radius: 2.5px;
+  bottom: 0;
+}
+.weekly-activity-graph .graph .blue-line {
+  background-color: blue;
+  left: 0;
+}
+.weekly-activity-graph .graph .green-line {
+  background-color: green;
+  right: 0;
+}
+.weekly-activity-graph .labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.weekly-activity-graph .labels .days {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 40px);
+  position: relative;
+  left: 40px;
+}
+.weekly-activity-graph .labels .days div {
+  width: 14.2857142857%;
+  text-align: center;
+  color: #333;
+}
+.weekly-activity-graph .labels .numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  position: absolute;
+  left: 10px;
+}
+.weekly-activity-graph .labels .numbers div {
+  font-size: 12px;
+  color: #333;
+  margin: 0;
+}
+
+.expense-statistics-graph {
+  width: 300px;
+  height: 320px;
+  border-radius: 25px;
+  background-color: white;
+  margin-top: 4vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=styles.css.map */
