@@ -314,47 +314,36 @@ body {
   position: relative;
 }
 .weekly-activity-graph .graph {
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  position: relative;
+  height: calc(100% - 40px);
   width: calc(100% - 60px);
-  height: calc(100% - 30px);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 10px;
-  box-sizing: border-box;
+  margin-right: 60px;
 }
 .weekly-activity-graph .graph .line {
   position: absolute;
-  width: 5px;
-  border-radius: 2.5px;
+  width: 10px;
+  border-radius: 10px;
   bottom: 0;
 }
 .weekly-activity-graph .graph .blue-line {
-  background-color: blue;
-  left: 0;
+  background-color: #1814F3;
 }
 .weekly-activity-graph .graph .green-line {
-  background-color: green;
-  right: 0;
+  background-color: #16DBCC;
 }
 .weekly-activity-graph .labels {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  margin-top: 10px;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 100%;
-  padding: 0 10px;
-  box-sizing: border-box;
+  height: 30px;
 }
 .weekly-activity-graph .labels .days {
   display: flex;
   justify-content: space-between;
   width: calc(100% - 40px);
-  position: relative;
-  left: 40px;
 }
 .weekly-activity-graph .labels .days div {
   width: 14.2857142857%;
@@ -363,11 +352,13 @@ body {
 }
 .weekly-activity-graph .labels .numbers {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  width: 30px;
+  height: 100%;
   position: absolute;
-  left: 10px;
+  left: 0;
+  width: 30px;
+  margin-top: 3vh;
 }
 .weekly-activity-graph .labels .numbers div {
   font-size: 12px;
@@ -376,10 +367,11 @@ body {
 }
 
 .expense-statistics-graph {
-  width: 300px;
+  width: 330px;
   height: 320px;
   border-radius: 25px;
   background-color: white;
-  margin-top: 4vh;
+  margin-top: -81.5vh;
+  margin-left: 108vh;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=styles.css.map */
