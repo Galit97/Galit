@@ -1,9 +1,14 @@
+/////////// MENU & HEADER /////////
+
 $primary-color:#343C6A;
+$second-color: #4C49ED;
 body {
     background-color: white;
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif; 
+    text-decoration: none;
+    background-color: #F5F7FA;
 }
 
 .page {
@@ -14,58 +19,66 @@ body {
     width: 15%;
     height: 100vh; 
     padding: 1rem;
-    border-right: 1px solid #E6EFF5; 
+    border-right: 1px solid #E6EFF5;
+    background-color: white;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .logo-name {
+        color: $primary-color;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-top: -1rem;
+        background-color: white;
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem 0;
+            color: $primary-color;
+            cursor: pointer;
+    
+
+            a {
+                text-decoration: none;
+            }
+
+            img {
+                margin-right: 1rem;
+
+                &.chosen {
+                    margin-left: -32px; 
+                padding-right: 10px;
+                }
 
 
-.logo {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    margin-bottom: 2rem;
-}
-.logo-name {
-    color: $primary-color;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    margin-left: 1rem;
+            }
+        }
+    }
 }
 
-.menu {
-    display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
-    margin-top: -1rem;
 
-
-
-.menu-item {
-    display: flex;
-    align-items: center;
-    padding: 1rem 0;
-    color: $primary-color;
-    cursor: pointer;
-}
-
-.menu-item img {
-    margin-right: 1rem;
-    &.chosen {
-        margin-left: -32px;
-&.dashboard {
-   margin-right: 60px;
-}
-}
-}
-}
-}
 
 .header {
     border-bottom: 2px solid #F5F7FA; 
     width: 80%;
-    height: 65px;
+    height: 60px;
     padding: 1rem 1rem;
     display: flex;
     justify-content: space-between;
-    margin-top: 1.2rem;
+    background-color: white;
     .page-name {
         font-size: 25px;
         font-weight: 600;
@@ -120,3 +133,61 @@ body {
     }
 }
 
+
+/////////// DASHBOARD /////////
+ 
+.top-article {
+    display: flex;
+justify-content: space-between;
+    
+h2 {
+    font-size: 22px;
+    color: $primary-color;
+}
+
+h3 {
+    font-size: 17px;
+    color: $primary-color;
+}
+    .recent-transaction-white{
+    width: 350px;
+    height: 235px;
+    background-color: white;
+    border-radius: 25%;
+    border-color: solid 1px #F5F7FA;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+
+
+
+    .blue-credit-card,
+    .white-credit-card {
+        width: 350px;
+        height: 235px;
+        border-radius: 25%;
+
+        .credit-card-icon-white,
+        .credit-card-icon-black {
+            width: 34.77px;
+            height: 34.77px;
+        }
+
+        .circles-white,
+        .circles-black {
+            width: 44px;
+            height: 30px;
+        }
+    }
+
+    .blue-credit-card {
+        background-color: $second-color;
+    }
+
+    .white-credit-card {
+        background-color: white;
+        border-color: solid 1px #F5F7FA;
+    }
+}
+}
