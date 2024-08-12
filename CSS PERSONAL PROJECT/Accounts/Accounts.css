@@ -1,3 +1,1 @@
-body {
-  background-color: aqua;
-}/*# sourceMappingURL=Accounts.css.map */
+.four-boxes{width:1005px;height:70px;margin-top:20vh;margin-left:-155vh;display:flex;justify-content:space-between}.box{background-color:#fff;box-shadow:0 4px 8px rgba(0,0,0,.1);border-radius:25px;width:200px;height:100px;display:flex;align-items:center;padding:10px}.box img{width:40px;height:40px;margin-left:2vh}.box h5,.box h2{margin:0;margin-left:4vh}.box h5{font-size:14px;color:#718ebf;font-weight:400}.box h2{font-size:18px;color:#000}
