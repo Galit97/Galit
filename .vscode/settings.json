@@ -2,19 +2,3 @@
   "compile-hero.disable-compile-files-on-did-save-code": false,
   "cSpell.words": ["Cusuma", "jemi"]
 }
-"liveSassCompile.settings.formats": [
-    {
-        "format": "expanded",
-        "extensionName": ".css",
-        "savePath": "/"
-    }
-],
-"liveSassCompile.settings.excludeList": [
-    "**/node_modules/**",
-    ".vscode/**",
-    "compile/**",
-    "src/**/*.scss"
-],
-"liveSassCompile.settings.includeItems": [
-    "src/**/*.scss"
-]
