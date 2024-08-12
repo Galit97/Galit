@@ -1,6 +1,5 @@
 {
-  "compile-hero.disable-compile-files-on-did-save-code": false,
-  "cSpell.words": ["Cusuma", "jemi"]
+  "recommendations": ["glenn2223.live-sass"]
 }
 "liveSassCompile.settings.formats": [
     {
