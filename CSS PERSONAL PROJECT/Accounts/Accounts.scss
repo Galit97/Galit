@@ -1,11 +1,12 @@
 .four-boxes {
-    width: 1005px;
+    width: 1000px;
     height: 70px;
     margin-top: 20vh;
-    margin-left: -155vh;
+    margin-left: -150vh;
     display: flex;
     justify-content: space-between;
-}
+    
+
 
 .box {
     background-color: white;
@@ -21,7 +22,6 @@
 .box img {
     width: 40px;        
     height: 40px;          
-    margin-left: 2vh;   
 }
 
 .box h5, .box h2 {
@@ -39,3 +39,167 @@
     font-size: 18px;  
     color: #000;     
 }
+}
+
+.second-article-header{
+    font-weight: bold;
+    color: #343C6A;
+    display: grid;
+    grid-template-columns: 2fr 1fr 0.3fr;
+    margin-top: 40vh;
+    margin-left: -140vh;
+    width: 1005px;
+    height: 70px;
+   
+
+    h2{
+        font-size: 22px;
+    }
+    h3{
+        font-size: 17px;
+    }
+}
+.second-article {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px;
+}
+.last-tran-box {
+    width: 530px;
+    height: 225px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: -150vh;
+    margin-top: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1vh;
+    gap: 1px;
+}
+
+.tran-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 18px 5px;
+}
+
+.tran-item img.tran-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 1vh; 
+}
+
+.tran-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.tran-info h2 {
+    color: #333B69;
+    font-size: 12px;
+    margin: 0;
+}
+
+.tran-info h5 {
+    color: #718EBF;
+    font-size: 12px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.tran-details {
+    display: flex;
+    align-items: center;
+    gap: 2vw; 
+}
+
+.tran-details h5 {
+    display: flex;
+    align-items: center;
+    color: #718EBF;
+    font-size: 12px;
+    margin: 0;
+    font-weight: 200;
+}
+
+.tran-details h5 span {
+    margin-right: 3vh; 
+}
+
+.tran-details h6 {
+    font-size: 14px;
+    margin: 0;
+    margin-right: 1vh;
+}
+
+.negative {
+    color: #16DBAA;
+}
+
+.positive {
+    color: #FE5C73;
+}
+
+.blue-credit-card {
+    width: 350px;
+    height: 225px;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    gap: 10px;
+    background: linear-gradient(160deg, #4C49ED, #2b2bb8); 
+    color: white;
+    margin-top: -34vh;
+    margin-left: 90vh;
+}
+
+    h5, h4 {
+        margin: 0;
+        padding: 0;
+    }
+
+    h4 {
+        font-size: 20px;
+        font-weight: 400;
+        
+    }
+    h5 {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .credit-card-icon-white {
+        width: 34.77px;
+        height: 34.77px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .circles-white{
+        width: 44px;
+        height: 30px;
+        position: absolute;
+        bottom: 13px;
+        left: 270px; 
+    
+
+
+    .card-number {
+        color: #4C49ED;
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+    }
+
