@@ -1,0 +1,172 @@
+.top-article-tran {
+  width: 75%;
+  height: auto;
+  margin-top: 18vh;
+  margin-left: -160vh;
+}
+
+.top-article-header-tran {
+  display: grid;
+  grid-template-columns: 4fr 2fr 1fr;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #343C6A;
+}
+
+.my-cards,
+.my-expense {
+  font-size: 22px;
+}
+
+.see-all {
+  font-size: 17px;
+}
+
+.cards-section-tran {
+  display: flex;
+  justify-content: space-between;
+  gap: 3vh;
+}
+
+.blue-credit-card,
+.white-credit-card {
+  width: 300px;
+  height: 225px;
+  border-radius: 15px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  gap: 10px;
+}
+
+h5, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.credit-card-icon-white,
+.credit-card-icon-black {
+  width: 34.77px;
+  height: 34.77px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.circles-white,
+.circles-black {
+  width: 44px;
+  height: 30px;
+  position: absolute;
+  bottom: 13px;
+  left: 270px;
+}
+
+.blue-credit-card {
+  background: linear-gradient(160deg, #4C49ED, #2b2bb8);
+  color: white;
+}
+
+.white-credit-card {
+  background-color: white;
+  border: 1px solid #F5F7FA;
+  color: #4C49ED;
+}
+
+.card-number {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.monthly-expense-graph {
+  width: 300px;
+  height: 265px;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.graph {
+  position: relative;
+  height: calc(100% - 40px);
+  width: calc(100% - 60px);
+  margin-right: 60px;
+}
+
+.line {
+  position: absolute;
+  width: 30px;
+  border-radius: 10px;
+  bottom: 0;
+}
+
+.grey-line {
+  background-color: #EDF0F7;
+}
+
+.green-line {
+  background-color: #16DBCC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 30px;
+}
+
+.months {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 40px);
+  margin-left: 8vh;
+}
+
+.months div {
+  width: 14.2857142857%;
+  color: #718EBF;
+}
+
+.recent-tran .recent-tran-header {
+  display: flex;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #343C6A;
+}
+.recent-tran .recent-tran-mini-header {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.recent-tran .recent-tran-mini-header h3 {
+  color: #4C49ED;
+  font-size: 16px;
+  margin-top: -1vh;
+  border-bottom: solid 2px #4C49ED;
+}
+.recent-tran .recent-tran-mini-header h4 {
+  color: #718EBF;
+  font-weight: 400;
+  font-size: 16px;
+}/*# sourceMappingURL=Transaction.css.map */
