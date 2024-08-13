@@ -109,6 +109,12 @@ h5 {
   width: calc(100% - 60px);
   margin-right: 60px;
 }
+.graph h4 {
+  color: rgb(0, 0, 0);
+  margin-top: 2vh;
+  margin-left: 25vh;
+  font-size: 14px;
+}
 
 .line {
   position: absolute;
@@ -123,10 +129,6 @@ h5 {
 
 .green-line {
   background-color: #16DBCC;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: rgb(0, 0, 0);
 }
 
 .labels {
@@ -140,7 +142,7 @@ h5 {
   display: flex;
   justify-content: space-between;
   width: calc(100% - 40px);
-  margin-left: 8vh;
+  margin-left: 4vh;
 }
 
 .months div {
@@ -169,4 +171,94 @@ h5 {
   color: #718EBF;
   font-weight: 400;
   font-size: 16px;
+}
+
+.transaction-table {
+  width: 1000px;
+  height: 277px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-header, .table-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  width: 100%;
+}
+.table-header .cost.positive, .table-row .cost.positive {
+  color: #FE5C73;
+}
+.table-header .cost.negative, .table-row .cost.negative {
+  color: #16DBAA;
+}
+
+.table-header {
+  font-weight: 400;
+  color: #718EBF;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.header-item, .row-item {
+  width: 14.2857142857%;
+  text-align: left;
+  font-size: 12px;
+}
+
+.table-row {
+  padding: 0.5rem 0;
+  border-top: 1px solid #F5F7FA;
+}
+
+.table-row:first-of-type {
+  border-top: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem;
+  position: relative;
+}
+
+.pagination-link {
+  color: #1814F3;
+  font-weight: 500;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.pagination-numbers {
+  display: flex;
+  gap: 5px;
+}
+
+.pagination-number {
+  color: #1814F3;
+  font-weight: 500;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.pagination-number.active {
+  background-color: #1814F3;
+  color: white;
+  border: none;
 }/*# sourceMappingURL=Transaction.css.map */
