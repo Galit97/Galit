@@ -66,6 +66,7 @@ body {
 .page .header .page-name {
   font-size: 25px;
   font-weight: 600;
+  margin-top: 3vh;
   color: #343C6A;
 }
 .page .header .header-right {
