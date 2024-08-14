@@ -11,50 +11,61 @@ body {
   display: flex;
   flex-direction: row;
 }
-.page .sidebar {
+
+.sidebar {
   width: 15%;
   height: 160vh;
   padding: 1rem;
   border-right: 1px solid #E6EFF5;
   background-color: white;
 }
-.page .sidebar .logo {
+.sidebar .logo {
   display: flex;
   align-items: center;
   padding: 1rem;
   margin-bottom: 2rem;
 }
-.page .sidebar .logo-name {
+.sidebar .logo-name {
   color: #343C6A;
   font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: 25px;
   margin-left: 1rem;
 }
-.page .sidebar .menu {
+.sidebar .bank-logo {
+  width: 36px;
+  height: 36px;
+}
+.sidebar .menu {
   display: flex;
   flex-direction: column;
   margin-left: 1rem;
   margin-top: -1rem;
   background-color: white;
 }
-.page .sidebar .menu .menu-item {
+.sidebar .menu .menu-item {
   display: flex;
   align-items: center;
   padding: 1rem 0;
   color: #343C6A;
   cursor: pointer;
 }
-.page .sidebar .menu .menu-item a {
+.sidebar .menu .menu-item a {
   text-decoration: none;
 }
-.page .sidebar .menu .menu-item img {
+.sidebar .menu .menu-item img {
   margin-right: 1rem;
 }
-.page .sidebar .menu .menu-item img.chosen {
+.sidebar .menu .menu-item img.chosen {
   margin-left: -32px;
   padding-right: 10px;
 }
-.page .header {
+@media (max-width: 375px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.header {
   border-bottom: 2px solid #F5F7FA;
   width: 80%;
   height: 60px;
@@ -63,17 +74,17 @@ body {
   justify-content: space-between;
   background-color: white;
 }
-.page .header .page-name {
+.header .page-name {
   font-size: 25px;
   font-weight: 600;
   margin-top: 3vh;
   color: #343C6A;
 }
-.page .header .header-right {
+.header .header-right {
   display: flex;
   gap: 2rem;
 }
-.page .header .header-right img {
+.header .header-right img {
   cursor: pointer;
   background-color: #F5F7FA;
   border-radius: 50%;
@@ -81,17 +92,17 @@ body {
   height: 24px;
   padding: 8px;
 }
-.page .header .header-right img.profile {
+.header .header-right img.profile {
   width: 34px;
   height: 34px;
   padding: 0%;
 }
-.page .header .search-container {
+.header .search-container {
   position: relative;
   display: flex;
   width: 255px;
 }
-.page .header .search-container .search-icon {
+.header .search-container .search-icon {
   position: absolute;
   left: 10px;
   margin-left: 10px;
@@ -101,7 +112,7 @@ body {
   height: 16px;
   padding: 5px;
 }
-.page .header .search-container .search-input {
+.header .search-container .search-input {
   padding-left: 48px;
   height: 40px;
   border-radius: 20px;
@@ -110,6 +121,56 @@ body {
   width: 100%;
 }
 
+@media (max-width: 375px) {
+  .header {
+    width: 375px;
+    height: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../Images/lines.svg");
+    background-position: 5% 15%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 15px 15px;
+  }
+  .header .page-name {
+    margin-top: -2vh;
+    margin-left: 0vh;
+  }
+  .header .header-right {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .header .header-right .notification, .header .header-right .header-settings {
+    display: none;
+  }
+  .header .header-right .profile {
+    display: block;
+    margin-top: -3vh;
+    margin-left: -5vh;
+  }
+  .search-container {
+    position: static;
+    width: 245px;
+    height: 40px;
+    margin-top: 2vh;
+    margin-bottom: 0vh;
+    margin-left: 6vh;
+    align-items: center;
+  }
+  .search-container .search-input {
+    font-size: 13px;
+    text-align: left;
+  }
+  .search-container .search-icon {
+    position: absolute;
+    margin: 0;
+    margin-top: 2vh;
+    margin-left: -4vh;
+  }
+}
 .top-article {
   width: 78%;
   margin-left: 20%;

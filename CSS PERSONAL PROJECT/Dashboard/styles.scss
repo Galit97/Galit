@@ -12,14 +12,14 @@ body {
     text-decoration: none;
     background-color: #F5F7FA;
 }
-
-    .page {
+.page {
     display: flex;
     flex-direction: row;
+}
 
 .sidebar {
     width: 15%;
-    height: 160vh; 
+    height: 160vh;
     padding: 1rem;
     border-right: 1px solid #E6EFF5;
     background-color: white;
@@ -34,8 +34,13 @@ body {
     .logo-name {
         color: $primary-color;
         font-weight: bolder;
-        font-size: 1.5rem;
+        font-size: 25px;
         margin-left: 1rem;
+    }
+
+    .bank-logo {
+        width: 36px;
+        height: 36px;
     }
 
     .menu {
@@ -51,7 +56,6 @@ body {
             padding: 1rem 0;
             color: $primary-color;
             cursor: pointer;
-    
 
             a {
                 text-decoration: none;
@@ -61,14 +65,19 @@ body {
                 margin-right: 1rem;
 
                 &.chosen {
-                    margin-left: -32px; 
-                padding-right: 10px;
+                    margin-left: -32px;
+                    padding-right: 10px;
                 }
-
+         
             }
         }
     }
+    @media (max-width:375px) {
+        display: none;
+    }
 }
+
+
 
 
 
@@ -132,9 +141,71 @@ body {
                 width: 100%;
             }
         }
-    }
-}
+    }  
+        
+    @media (max-width: 375px) {
+        .header {
+            width: 375px;
+            height: 100px;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          background-image: url('../Images/lines.svg');
+    background-position: 5% 15%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 15px 15px;
+          .page-name {
+            margin-top: -2vh;
+            margin-left: -0vh;
+          }
+      
+          .header-right {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+      
+            .notification,  .header-settings {
+                display: none; 
+              }
+              .profile {
+                display: block;
+                margin-top: -3vh;
+                margin-left: -5vh;
+              }
+            }
 
+          }
+      
+          .search-container {
+            position: static; 
+            width: 245px;
+            height: 40px;
+            margin-top: 2vh;
+            margin-bottom: 0vh;
+            margin-left: 6vh;
+            
+            align-items: center;
+            .search-input{
+                font-size: 13px;
+                text-align: left;
+            }
+      
+            .search-icon {
+              position: absolute;
+              margin: 0;
+              margin-top: 2vh;
+              margin-left: -4vh;
+
+            }
+          }
+      
+ 
+        }
+      
+            
+        
+    
 
 /////////// DASHBOARD /////////
  
