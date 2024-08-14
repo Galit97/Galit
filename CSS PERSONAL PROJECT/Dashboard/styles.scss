@@ -24,6 +24,10 @@ body {
     border-right: 1px solid #E6EFF5;
     background-color: white;
 
+//   @media (max-width:375px) {
+//     display: none;
+  
+
     .logo {
         display: flex;
         align-items: center;
@@ -72,10 +76,7 @@ body {
             }
         }
     }
-    @media (max-width:375px) {
-        display: none;
     }
-}
 
 
 
@@ -215,6 +216,9 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: -150vh;
+    @media (max-width:375px) {
+flex-direction: row;        
+    }
 
     .top-article-header {
         display: flex;
